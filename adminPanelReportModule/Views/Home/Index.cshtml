@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- fontawesome cdn yazarak gidip kodu kopyalıyoruz. -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="~/css/StyleSheet.css">
+    <title>Admin Panel Module</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="Burada Ara...">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+           <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-tie"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div>Örnek Sekme</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">50001</div>
+                        <div class="card-name">Müşteriler</div>
+                    </div>
+                    <div class="icon-box">
+                       <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">152</div>
+                        <div class="card-name">Ürünler</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fad fa-bags-shopping"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">304</div>
+                        <div class="card-name">Ürün Seçenekleri</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="far fa-filter"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">45000</div>
+                        <div class="card-name">Total</div>
+                    </div>
+                    <div class="icon-box">
+                       <i class="fas fa-lira-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Ürünler</h2>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="chart doughnut-chart">
+                    <h2>Müşteri Dağılımı</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+                <div class="chart bar-chart">
+                    <h2>Sipariş Dağılımı</h2>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="~/js/chart1.js"></script>
+    <script src="~/js/chart2.js"></script>
+    <script src="~/js/chart3.js"></script>
+</body>
+
+</html>
